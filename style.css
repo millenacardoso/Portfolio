@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+/* Restante do seu CSS */
+
+/* Restante do seu CSS */
+
+/*///////////////////////////////////////////////////CONFIGURAÇÕES GERAIS////////////////////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(3, 6, 37, 1), rgba(60, 7, 83, 1), rgba(145, 10, 103, 1)) fixed;
+    background-repeat: no-repeat;
+    font-family: "Source Code Pro", monospace;
+    color: white;
+}
+
+/*///////////////////////////////////////////////////MENU////////////////////////////////////////// */
+
+header {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.top-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Source Code Pro', monospace; /* Defina a fonte Source Code Pro para o menu */
+}
+
+.top-menu li {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.top-menu li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.top-menu li a:hover {
+    color: #910A67;
+    font-size: 18px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////APRESENTAÇÃO - TÍTULO PRESENCIAL////////////////////////////////////////// */
+
+#titulo-millena {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 74px;
+    font-weight: bold;
+    color: #e9e3e3;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4);
+    padding-top: 80px;
+    margin-left: -460px;
+    word-wrap: none;
+    word-spacing: -40px;
+    padding-bottom: 30px;
+}
+
+#subtitulo{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 20px;
+    color: #e9e5e5;
+    text-align: center;
+    margin-left: -450px;
+    word-spacing: -4px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.foto-moldura {
+    position: absolute;
+}
+
+#perfil {
+    position: absolute;
+    top: 150px;
+    right: 64px;
+    width: 400px;
+    height: 360px;
+}
+
+#moldura {
+    position: absolute;
+    top: 114px;
+    right: 24px;
+    width: 485px;
+    height: 432px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*///////////////////////////////////////////////////DOWNLOAD - CURRÍCULO////////////////////////////////////////// */
+
+.botao-cv {
+    display: inline-block;
+    padding: 10px 17px;
+    margin-left: 298px;
+    margin-top: 30px;
+    background-color: #3C0753;
+    color: white;
+    text-decoration: none;
+    font-family: 'Silkscreen', monospace;
+    font-size: 26px;
+    font-weight: bold;
+    border: 2px solid #3f022d; /* Borda transparente */
+    box-shadow: 0 4px 6px rgb(7, 1, 65); /* Sombra suave */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transição suave */
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    margin-bottom: 30px;
+}
+
+.botao-cv:hover {
+    background-color: #030637; /* Mudança de cor no hover */
+    color: #fff; /* Cor do texto no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
+}
+
+/* Ícone de download */
+.botao-cv::after {
+    content: "\2193"; /* Código do ícone de seta para baixo */
+    margin-left: 8px; /* Espaçamento entre o texto e o ícone */
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////SOBRE MIM////////////////////////////////////////// */
+
+.sobre-mim {
+    background-color: #030637; /* Cor de fundo */
+    padding: 5px 22px 16px 22px; /* Espaçamento interno */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra */
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 0 auto;
+}
+
+#sobre-mim-titulo {
+    font-family: 'Bungee', sans-serif; /* Fonte incomum */
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+}
+
+#sobre-mim-titulo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(255, 255, 255, 0.3); /* Cor da linha com opacidade */
+    margin-top: 0px; /* Espaçamento superior */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#sobre-mim-paragrafo {
+    color: #fff; /* Cor do texto */
+    font-size: 15px; /* Tamanho da fonte do parágrafo */
+    line-height: 1.5; /* Altura da linha */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: justify; /* Centraliza o texto */
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*///////////////////////////////////////////////////COMPETÊNCIAS ////////////////////////////////////////// */
+
+.competencias {
+    background-color: #030637; /* Cor de fundo */
+    padding: 5px 22px 16px 22px; /* Espaçamento interno */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra */
+    width: 470px; /* Largura total das duas colunas */
+    margin-top: -478px;
+    margin-left: 480px;
+}
+
+.competencias-texto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas com largura igual */
+    grid-column-gap: 30px; /* Espaço entre as colunas */
+    grid-row-gap: 20px; /* Espaço entre as linhas */
+}
+
+#competencias-titulo {
+    font-family: 'Bungee', sans-serif; /* Fonte incomum */
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
+}
+
+#competencias-titulo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(255, 255, 255, 0.3); /* Cor da linha com opacidade */
+    margin-top: 0px; /* Espaçamento superior */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#logo-python,
+#logo-html,
+#logo-css,
+#logo-js,
+#logo-qt,
+#logo-office {
+    width: 90px;
+    height: 90px;
+}
+
+/* Estilo para o figure */
+.logo {
+    display: flex; /* Utilizando Flexbox para alinhar itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    max-width: 100%;
+}
+
+/* Estilo para a imagem dentro do figure */
+.logo img {
+    max-width: 50%; /* Define a largura máxima da imagem */
+    height: auto; /* Garante que a proporção da imagem seja mantida */
+}
+
+/* Estilo para a legenda dentro do figure */
+.logo figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: white;
+    margin-left: 10px; /* Espaçamento entre a imagem e a legenda */
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////IDIOMAS////////////////////////////////////////// */
+
+.idiomas {
+    background-color: #030637; /* Cor de fundo */
+    padding: 5px 22px 16px 22px; /* Espaçamento interno */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra */
+    width: 240px; /* Largura total das duas colunas */
+    margin-top: -465px;
+    margin-left: 990px;
+}
+
+
+#idiomas-titulo {
+    font-family: 'Bungee', sans-serif; /* Fonte incomum */
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
+}
+
+#idiomas-titulo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(255, 255, 255, 0.3); /* Cor da linha com opacidade */
+    margin-top: 0px; /* Espaçamento superior */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#eng-usa-flag {
+    width: 120px; /* Largura do ícone */
+    height: 135px; /* Altura do ícone */
+    margin-left: 8px;
+    margin-top: -20px;
+    margin-bottom: -25px;
+}
+
+#spain-flag {
+    width: 120px; /* Largura do ícone */
+    height: 85px; /* Altura do ícone */
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 11px;
+}
+
+#jap-flag {
+    width: 136px; /* Largura do ícone */
+    height: 85px; /* Altura do ícone */
+    margin-left: 3px;
+    margin-top: 8px;
+}
+
+.flags {
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    align-items: center;
+    margin-top: -8px;
+    margin-bottom: 4px;
+}
+
+.flags figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: white;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////// */
+/*//////////////////////////////////////////////////PROJETOS////////////////////////////////////////// */
+.projetos {
+    background-color: #030637; /* Cor de fundo */
+    padding: 5px 22px 16px 22px; /* Espaçamento interno */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra */
+    width: 835px; /* Largura total das duas colunas */
+    margin-top: 58px;
+    margin-left: 42px;
+}
+
+.projetos p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 8px; /* Altere o valor conforme desejado */
+}
+
+#projeto-titulo {
+    font-family: 'Bungee', sans-serif; /* Fonte incomum */
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+}
+
+#projeto-titulo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(255, 255, 255, 0.3); /* Cor da linha com opacidade */
+    margin-top: 0px; /* Espaçamento superior */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.projetos-grid{
+    display: grid; /* Ativa o grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas com largura igual */
+    gap: 20px; /* Espaçamento entre as colunas */
+    margin-top: -20px;
+}
+
+#subtitulo-projetos {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 22px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+    color: #d4239c;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.preview-projeto {
+    text-align: center;
+}
+
+#projeto-img{
+    width: 370px;
+    height: 350px;
+    border: 2px solid #3C0753; /* Adiciona uma borda sólida com um tom mais discreto de roxo */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+    box-shadow: 0px 0px 5px 3px rgba(60, 7, 83, 0.5), 0px 0px 10px 5px rgba(60, 7, 83, 0.3); /* Adiciona sombreamento */
+}
+
+.projeto-descricao {
+    padding: 15px;
+}
+
+#freeCodeCamp {
+    color: magenta;
+    text-decoration: none;
+}
+
+#freeCodeCamp:hover {
+    color: blueviolet;
+    font-size: 16px;
+}
+
+.preview-download {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 12px;
+    padding: 0px;
+    text-align: center;
+}
+
+.botao-download {
+    background-color: #910A67; /* Cor de fundo padrão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px;
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Permite definir largura e altura */
+  }
+
+  /* Estilo para o hover */
+.botao-download:hover {
+    background-color: #3C0753; /* Nova cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////ÂMBITO ACADÊMICO////////////////////////////////////////// */
+
+.ambito-academico {
+    background-color: #030637; /* Cor de fundo */
+    padding: 0 12px 12px 12px; /* Espaçamento interno */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra */
+    width: 330px; /* Largura total das duas colunas */
+    margin-top: -1636px;
+    margin-left: 940px;
+}
+
+#ambito-academico-titulo {
+    font-family: 'Bungee', sans-serif; /* Fonte incomum */
+    font-size: 28px; /* Tamanho da fonte do título */
+    padding-top: 15px;
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
+    line-height: 1.5;
+}
+
+#ambito-academico-titulo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(255, 255, 255, 0.3); /* Cor da linha com opacidade */
+    margin-top: 0px; /* Espaçamento superior */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#titulo-formacao {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 22px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+    color: #d4239c;
+    margin-bottom: 20px;
+}
+
+#formacao-lista {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+#formacao-lista li {
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+
+.ambito-academico a {
+    color: magenta;
+    text-decoration: none;
+}
+.ambito-academico a:hover {
+    color: blueviolet;
+    font-size: 16px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////ÂMBITO PROFISSIONAL////////////////////////////////////////// */
+
+.ambito-profissional {
+    background-color: #030637; /* Cor de fundo */
+    padding: 0 12px 12px 12px; /* Espaçamento interno */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra */
+    width: 330px; /* Largura total das duas colunas */
+    margin-top: 20px;
+    margin-left: 940px;
+    word-wrap: break-word;
+}
+
+#ambito-profissional-titulo {
+    font-family: 'Bungee', sans-serif; /* Fonte incomum */
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra do texto */
+    line-height: 1.5;
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
+}
+
+#ambito-profissional-titulo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(255, 255, 255, 0.3); /* Cor da linha com opacidade */
+    margin-top: 0px; /* Espaçamento superior */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#titulo-experiencia {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 22px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+    color: #d4239c;
+    margin-bottom: 20px;
+}
+
+.profissoes h4 {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 19px;
+    text-align: center;
+    color: violet;
+    padding: 10px;
+}
+
+#empresa{
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    margin-bottom: 6px;
+}
+
+#data {
+    color: white;
+    text-align: right;
+}
+
+#descricao-prof {
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+    line-height: 1.5;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////AGRADECIMENTO////////////////////////////////////////// */
+
+#agradecimento-texto {
+    margin: 0 auto;
+}
+
+#agradecimento-titulo {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 65px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 140px;
+    margin-left: -462px;
+}
+
+#agradecimento-subtitulo {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 50px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -460px;
+}
+
+.agradecimento p {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 68px;
+    white-space: nowrap;
+    color: #e9e5e5;
+    text-align: center;
+    margin-left: -460px;
+    word-spacing: -7px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.agradecimento img {
+    width: 480px;
+    height: 420px;
+    margin-top: -300px;
+    margin-left: 790px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*///////////////////////////////////////////////////CONTATO////////////////////////////////////////// */
+
+footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.redes-sociais img {
+    margin-right: 14px;
+}
+
+/* Ajustar tamanho e cursor ao passar o mouse sobre as imagens */
+.redes-sociais img:hover {
+    opacity: 0.8;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+#email {
+    width: 32px;
+    height: 22px;
+}
+
+#whatsapp {
+    width: 32px;
+    height: 26px;
+}
+
+#linkedin {
+    width: 32px;
+    height: 24px;
+}
+
+#github {
+    width: 32px;
+    height: 25px;
+}
